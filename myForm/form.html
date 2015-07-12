@@ -1,0 +1,89 @@
+<!DOCTYPE>
+<html>
+<head>
+	<meta chartset="utf-8"></meta>
+	<title>form</title>
+	<link rel="stylesheet" type="text/css" href="css/form.css">
+</head>
+<body>
+	<form class="stylin_form1 labels_left" action="" method="post">
+		<h3>A Stylin' Form</h3>
+		<fieldset>
+			<legend><span>Part 1 &#8226; Basic Controls</span></legend>
+			<!--单行文本输入控件-->
+			<section>
+				<p class="note">* indicates required field</p>
+				<label for="user_name">User Name<span>*</span></label>
+				<input type="text" id="user_name" name="user_name" />
+				<p>Please select a user name</p>
+			</section>
+			<!--密码控件-->
+			<section>
+				<label for="password">Password<span>*</span></label>
+				<input type="password" id="password" name="password" maxlength="20" />
+				<p>Password must be 8 or more characters</p>
+			</section>
+			<!--多行文本输入控件-->
+			<section>
+				<label for="description">Description</label>
+				<textarea id="description" name="description" placeholder="Enter the description here."></textarea>
+			</section>
+			<!--html5日期控件-->
+			<section>
+				<label for="special_date">Date</label>
+				<input type="date" id="special_date" name="event_date" min="2012-09-05" />
+			</section>
+		</fieldset>
+		<fieldset>
+			<legend><span>Part 2 &#8226; Multiple-choice Controls</span></legend>
+			<!--复选框-->
+			<section>
+				<h4>Select Any Number</h4>
+				<section>
+					<input type="checkbox" id="check1" name="checkset" value="1" tabindex="4" />
+					<label for="check1">Choice 1</label>
+				</section>
+				<section>
+					<input type="checkbox" checked="checked" id="check2" name="checkset" value="2" />
+					<label for="check2">Choice 2 is pre-checked</label>
+				</section>
+				<section>
+					<input type="checkbox" id="check3" name="checkset" value="3" />
+					<label for="check3">Choice 3&mdash;add as many as you need!</label>
+				</section>
+				<p>You must choose one or more</p>
+			</section>
+			<!--单选按钮-->
+			<section>
+				<h4>Select Only One</h4>
+				<section>
+					<input type="radio" checked="checked" id="radio1" name="radioset" value="Choice_1" />
+					<label for="radio1">Choice 1 is pre-selected and shows the text wraps nicely if it goes to multiple lines.</label>
+				</section>
+				<section>
+					<input id="radio2" name="radioset" type="radio" value="Choice_2" />
+					<label for="radio2">Choice 2</label>
+				</section>
+				<section>
+					<input type="radio" id="radio3" name="radioset" value="Choice_3" />
+					<label for="radio3">Choice 3</label>
+				</section>
+			</section>
+			<!--选项列表（下拉列表）-->
+			<section>
+				<label for="select_choice">Select Your Choice</label>
+				<select id="select-choice" name="select_choice">
+					<option value="0">None</option>
+					<option value="1">Choice 1</option>
+					<option value="2">Choice 2</option>
+					<option value="3">Choice 3</option>
+					<option value="4">Choice 4</option>
+				</select>
+			</section>
+		</fieldset>
+		<section>
+			<input type="submit" value="Submit This Form" />
+		</section>
+	</form>
+</body>
+</html>
